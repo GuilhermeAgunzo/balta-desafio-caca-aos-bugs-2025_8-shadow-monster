@@ -16,11 +16,11 @@ Neste processo eu aprendi:
 * ✅ Microsoft Azure
 
 ## REGRAS DO DESAFIO
-- [ ] Realizar um fork do repositório do desafio
-- [ ] Criar um Workflow para branch main
-- [ ] Executar o build do projeto no Workflow
-- [ ] Executar o teste (Unit Test) do projeto no Workflow
-- [ ] Realizar o deployment automatizado da aplicação via CI/CD
+- [x] Realizar um fork do repositório do desafio
+- [x] Criar um Workflow para branch main
+- [x] Executar o build do projeto no Workflow
+- [x] Executar o teste (Unit Test) do projeto no Workflow
+- [x] Realizar o deployment automatizado da aplicação via CI/CD
 
 ## Sobre o Caça aos Bugs
 O desafio **Caça aos Bugs 2025** consiste em encontrar bugs e sugerir melhorias para aplicações em cenários reais. Durante os 9 desafios desta jornada, os participantes são submetidos ao aprendizado e prática de Depuração de Aplicações, Testes de Unidade, Testes E2E, Melhorias de UI, Melhorias de Performance, Deployment e Infraestrutura,

@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+    build-and-test:
+      runs-on: ubuntu-latest
+    
+      steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
+
+        - name: Set up .NET 9
+          uses: actions/setup-dotnet@v3
+          with:
+            dotnet-version: '9.0.x'
+
+        - name: Restore dependencies
+          run: dotnet restore src/BugStore.sln
+
+        - name: Build app
+          run: dotnet build src/BugStore.sln --configuration Release --no-restore
+  
+        - name: Run unit tests
+          run: dotnet test src/BugStore.sln --verbosity normal
